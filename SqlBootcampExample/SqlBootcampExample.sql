@@ -11,6 +11,11 @@ CREATE TABLE Customer (
 	Active bit not null
 );
 
+SELECT c.Name, c.City, s.Name
+From Customer c
+Join State s
+	On c. State = s. Code;
+
 Insert Customer (Name, City, State, Sales, Active) Values ('Acme, inc.','Jersey City','NJ',14381891,1);
 Insert Customer (Name, City, State, Sales, Active) Values ('Widget Corp','Seattle','WA',97865829,1);
 Insert Customer (Name, City, State, Sales, Active) Values ('123 Warehousing','Los Angeles','CA',77503710,1);
