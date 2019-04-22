@@ -21,7 +21,8 @@ CREATE TABLE Customer (
 SELECT c.Name, c.City, s.Name
 From Customer c
 Join State s
-	On c. State = s. Code;
+	On c. State = s.Code;
+    
 INSERT INTO State (Code,Name) Values
 	('AL','Alabama'),
 	('CA','California'),
